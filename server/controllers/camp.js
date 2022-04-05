@@ -140,7 +140,7 @@ const getActiveCamps = async (req, res) => {
       res.status(200).send(camps);
     }
   } catch (error) {
-    if (error.message == 'No Active Camps Found') {
+    if (error.message === 'No Active Camps Found') {
       res.status(404).send('No Active Camps Found');
     } else {
       res.status(400).send(error.message);
