@@ -8,7 +8,7 @@ const { ensureAuthenticated } = require('../config/auth');
 router.get('/new', ensureAuthenticated, (req, res) => {
   res.render('posts/newPost');
 });
-router.post('/new', bookNew);
+router.post('/new', ensureAuthenticated, bookNew);
 // router.get('/get', getPosts);
 // router.get('/dashboard', getPostsOfUser);
 
