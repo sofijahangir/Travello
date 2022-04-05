@@ -1,0 +1,42 @@
+{
+  "name": "travello",
+  "version": "1.0.0",
+  "description": "Camping And Trekking Backend API",
+  "main": "server.js",
+  "scripts": {
+    "server": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "concurrently \"npm run server\" \"cd ../Frontend && npm start\""
+  },
+  "dependencies": {
+    "axios": "^0.21.0",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "concurrently": "^7.1.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "imgbb-uploader": "^1.1.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.10.12",
+    "mongoose-autopopulate": "^0.12.3",
+    "mongoose-unique-validator": "^2.0.3",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.2",
+    "razorpay": "^2.0.6",
+    "socket.io": "^3.0.1",
+    "uuid": "^8.3.1",
+    "validator": "^13.1.17"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  },
+  "keywords": [
+    "Camping",
+    "Trekking",
+    "Bookings"
+  ],
+  "author": "Jahangir Ahmad",
+  "license": "ISC"
+}

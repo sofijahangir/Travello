@@ -1,7 +1,6 @@
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 const validate = require('validator');
-const Camp_Owner = require('../models/camp_owner');
 const Admin = require('../models/admin');
 
 // Admin Signup
